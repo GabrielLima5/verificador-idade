@@ -1,5 +1,6 @@
 const button = document.querySelector(".button");
 const image = document.querySelector("img");
+const gender = document.querySelectorAll(".gender");
 let result = document.querySelector(".result");
 
 function ageCalc(birthYear) {
@@ -47,7 +48,6 @@ button.addEventListener("click", (e) => {
   const container = document.querySelector(".container");
   container.style.height = "450px";
   
-  const gender = document.querySelectorAll(".gender");
   const birthYear = document.querySelector("#birth-year").value;
 
   const phrase = `Detectamos um${gender[1].checked ? "" : "a"} ${getGender()}  com ${ageCalc(birthYear)} anos de idade.`
